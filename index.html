@@ -414,7 +414,7 @@ function updateInsights(monthlyCounts, dailyTotal) {
     let topExec = Object.keys(monthlyCounts).reduce((a, b) => (monthlyCounts[a] || 0) > (monthlyCounts[b] || 0) ? a : b, "");
     if (topExec) messages.push(`🏆 TOP GUN: ${topExec} is ruling the leaderboard!`);
 
-    insightEl.innerText = messages.join("        |        ") + "        |        🔻 TEAM RAK: CONVERTING 'MAYBES' INTO 'INVOICES'.        |        ";
+    insightEl.innerText = messages.join("        |        ") + "        |        ⚡ TEAM RAK: CONVERTING 'MAYBES' INTO 'INVOICES'.        |        ";
 }
 
 function calculatePeakHour(data) {
