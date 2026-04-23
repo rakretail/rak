@@ -382,12 +382,12 @@ function updateInsights(monthlyCounts, dailyTotal) {
         `MAHMOUD : "Don't show tiles… show them their dream home." ✨`,
         `MAHMOUD : "I can smell a big sale from the parking lot. Get ready!" 👃💰`
     ];
-    messages.push(`🔻          : ${nasarJokes[Math.floor(Math.random() * nasarJokes.length)]}`);
+    messages.push(`👔          : ${nasarJokes[Math.floor(Math.random() * nasarJokes.length)]}`);
 
     let activeExecs = executives.filter(name => !lockedUsers[name]);
     if (activeExecs.length > 0) {
         let sorted = [...activeExecs].sort((a, b) => (monthlyCounts[a] || 0) - (monthlyCounts[b] || 0));
-        messages.push(`🔻 SPOTLIGHT: ${sorted[0]}, you're up! Time to close a deal.`);
+        messages.push(`🎯 SPOTLIGHT: ${sorted[0]}, you're up! Time to close a deal.`);
     }
 
     const teamMojo = [
@@ -410,7 +410,7 @@ function updateInsights(monthlyCounts, dailyTotal) {
         });
     }
 
-    if (dailyTotal > 0) messages.push(`🔻 POWER TEAM: ${dailyTotal} customers served today.`);
+    if (dailyTotal > 0) messages.push(`🚀 POWER TEAM: ${dailyTotal} customers served today.`);
     let topExec = Object.keys(monthlyCounts).reduce((a, b) => (monthlyCounts[a] || 0) > (monthlyCounts[b] || 0) ? a : b, "");
     if (topExec) messages.push(`🏆 TOP GUN: ${topExec} is ruling the leaderboard!`);
 
