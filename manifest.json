@@ -1,6 +1,6 @@
 {
-  "name": "Fujairah Showroom Tracker",
-  "short_name": "FujTracker",
+  "name": "RAK Showroom Tracker",
+  "short_name": "RAKTracker",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f2f7f7",
