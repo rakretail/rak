@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="app-version" content="2026.10.15-2">
+<meta name="app-version" content="2026.10.15-3">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>RAK Showroom · Inquiry Tracker</title>
+<title>RAK Showroom · Tracker</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#006666">
 <link rel="apple-touch-icon" href="rakwalkin.png">
@@ -136,7 +135,8 @@ body.dark .topbar{background:rgba(7,17,17,.8)}
 #time{margin:0;font-size:clamp(2.4rem,7vw,3.8rem);font-weight:800;line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;
     display:inline-flex;align-items:baseline;white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.2)}
 #time .sep{opacity:.5;margin:0 5px;font-weight:600;animation:blink 2s steps(1) infinite}
-#time .sec{font-size:.4em;opacity:.7;margin-left:8px;font-weight:700}
+#time{position:relative;justify-self:center;justify-content:center}
+#time .sec{font-size:.4em;opacity:.7;font-weight:700;position:absolute;left:100%;bottom:.1em;margin-left:8px}   /* seconds hang outside, so HH:MM sits dead centre */
 .hero-split{display:inline-flex;gap:6px;margin-top:7px;flex-wrap:wrap;justify-content:flex-end}
 .hero-split span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:700;white-space:nowrap}
 .ticker{position:relative;display:flex;align-items:center;gap:10px;padding:9px 14px;background:rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.1)}
@@ -1003,7 +1003,7 @@ body.dark #toast button{background:rgba(0,0,0,.08);color:#0f2727;border-color:rg
             </div>
             <div class="adm-help"><b>Publishing an update</b>
                 <ol>
-                    <li>Change the <code>app-version</code> number near the top of the file (for example <code>2026.10.20-2</code>).</li>
+                    <li>Change the <code>app-version</code> number near the top of the file (for example <code>2026.10.20-3</code>).</li>
                     <li>Upload the file in place of the current one. Keep <code>sw.js</code> in the same folder.</li>
                     <li>That's all. Open devices refresh themselves within about 2 minutes, or straight away when the app is reopened. Nobody is logged out and nothing needs clearing or reinstalling.</li>
                 </ol>
