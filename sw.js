@@ -1,17 +1,3 @@
-/* ==================================================================
-   RAK Retail — service worker (showroom trackers and the management dashboard)
-   ------------------------------------------------------------------
-   Pages (index.html, manifest) are ALWAYS fetched fresh from the
-   server. The saved copy is used only when the device is offline.
-   That is what lets a newly uploaded index.html reach every device
-   on its own — no cache clearing, no reinstalling the app.
-
-   Icons, fonts and the chart/Excel/Firebase libraries are cached
-   for speed and offline use. Live Firebase data is never touched.
-
-   You do NOT need to edit this file when you publish a new version
-   of the page. Upload it once, next to index.html.
-   ================================================================== */
 const SW_VERSION = "2026.10.15-2";
 const CACHE = "showroom-" + SW_VERSION;
 
